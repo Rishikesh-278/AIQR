@@ -1,0 +1,44 @@
+body{
+    /* flex-direction: column; */
+    padding: 10px;
+    display: flex;
+    background-color: #141414;
+    width: 400px;
+    margin: auto;
+}
+
+/* Add some styling to the content */
+h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.linkClass {
+    color: white;
+}
+
+.bodyClass {
+    color: white;
+    margin: auto;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgClass {
+    padding: 15px;
+}
+
+.randomClass {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
