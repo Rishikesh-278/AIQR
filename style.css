@@ -1,9 +1,17 @@
+@font-face {
+    font-family:"Inter" ;
+    src: url(Fonts/Inter-Regular.ttf);
+}
+
 body{
+    color: white;
+    font-family: "Inter";
+    text-align:  center;
     /* flex-direction: column; */
     padding: 10px;
+    background-color: #212024;
     display: flex;
-    background-color: #141414;
-    width: 400px;
+    width: 550px;
     margin: auto;
 }
 
@@ -20,11 +28,14 @@ button {
     font-size: 16px;
 }
 
-.linkClass {
-    color: white;
+a {
+    text-decoration: none;
+    color: white;   
 }
 
 .bodyClass {
+    font-family: "Inter", 'Courier New', Courier, monospace;
+    font-size: 15px;
     color: white;
     margin: auto;
     display: flex;
@@ -38,7 +49,75 @@ button {
 }
 
 .randomClass {
+    border: 1px;
+    border-color: green;
     display: flex;
-    flex-direction: row;
     padding: 10px;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
 }
+
+.divClass{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center; /* Vertically centers the child elements */
+    align-items: center; 
+}
+.downloadButton {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+}
+
+.downloadButton:hover {
+    background-color: #bfbfbf;
+}
+
+.generate-button {
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.generate-button:hover{
+background-color: #bfbfbf;
+}
+
+/* Truncate long URLs with ellipsis */
+#currentUrl {
+    max-width: 90%; /* Adjust the max width as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 
+#loadingOverlay {
+  display: none; /* Initially hide the loading overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Make sure it appears on top of other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light gray border */
+  border-top: 4px solid #3498db; /* Blue border on top */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* Animation for spinning loader */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */

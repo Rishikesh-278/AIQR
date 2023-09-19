@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@gradio/client": "^0.3.1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "tall": "^8.0.0"
+  }
+}

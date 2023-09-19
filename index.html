@@ -1,21 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-   <div class="bodyClass">
-     <h1> AI QR codes</h1>
-     <p class="linkClass" id="currentUrl">Loading...</p>
-     <button onclick="">Generate for this page.</button>
-     <div class="randomClass">
-        <img class="imgClass" src="mineqr.png" width="150" height="150">     
-        <img class="imgClass" src="mineqr.png" width="150" height="150">    
-     </div>
-   </div>
-<script src="popup.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="bodyClass">
+      <h1>AI QR codes</h1>
+      <p id="currentUrl">Loading...</p>
+      <button id="apiButton" class="generate-button">Generate</button>
+      <div class="randomClass">
+        <div class="divClass">
+          <a href="#" download="qrCodeImage1" target="_blank">
+            <img class="imgClass" src="" width="200" height="200" id="qrCodeImage1"/>
+          </a>
+        </div>
+        <div class="divClass">
+          <a href="#" download="qrCodeImage2" target="_blank">
+            <img class="imgClass" src="" width="200" height="200" id="qrCodeImage2"/>
+          </a>
+        </div>
+      </div>
+      <p>Click on the image to download</p>
+      <a href="https://linktr.ee/rustyrishii" target="_blank">@RustyRishii</a>
+      <div id="loadingOverlay" class="loading-overlay">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <script src="background.js"></script>
+  </body>
 </html>

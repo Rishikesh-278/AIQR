@@ -8,6 +8,13 @@
         "default_title": "Latest Covid Report"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "management"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "scripts": [
+        "background.js" 
     ]
 }
