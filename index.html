@@ -8,27 +8,28 @@
   </head>
   <body>
     <div class="bodyClass">
-      <h1>AI QR codes</h1>
+      <h1>AI-QRCodeCraft</h1>
       <p id="currentUrl">Loading...</p>
       <button id="apiButton" class="generate-button">Generate</button>
       <div class="randomClass">
         <div class="divClass">
-          <a href="#" download="qrCodeImage1" target="_blank">
+          <a>
             <img class="imgClass" src="" width="200" height="200" id="qrCodeImage1"/>
           </a>
         </div>
         <div class="divClass">
-          <a href="#" download="qrCodeImage2" target="_blank">
+          <a>
             <img class="imgClass" src="" width="200" height="200" id="qrCodeImage2"/>
           </a>
-        </div>
+        </div>  
       </div>
-      <p>Click on the image to download</p>
+      <p>Once you hit Generate please wait, it takes 15 to 20 seconds.</p>
+      <p>Right click and save as on the image to download.</p>
       <a href="https://linktr.ee/rustyrishii" target="_blank">@RustyRishii</a>
       <div id="loadingOverlay" class="loading-overlay">
         <div class="loader"></div>
       </div>
     </div>
-    <script src="background.js"></script>
+    <script type="module" src="background.js"></script>
   </body>
 </html>

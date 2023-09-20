@@ -1,20 +1,18 @@
 {
-    "name": "AI QR codes",
+    "name": "AI-QRCodeCraft",
     "version": "1.0.0",
     "description": "Create beautiful AI-generated QR codes.",
     "manifest_version": 3,
     "action": {
         "default_popup": "index.html", 
-        "default_title": "Latest Covid Report"
+        "default_title": "Create AI generated QR codes"
     },
     "permissions": [
         "activeTab",
-        "management"
+        "management",
+        "downloads"
     ],
     "background": {
         "service_worker": "background.js"
-    },
-    "scripts": [
-        "background.js" 
-    ]
+    }
 }

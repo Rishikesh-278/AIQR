@@ -3,6 +3,7 @@
     "@gradio/client": "^0.3.1"
   },
   "dependencies": {
+    "firebase": "^10.4.0",
     "node-fetch": "^3.3.2",
     "tall": "^8.0.0"
   }
